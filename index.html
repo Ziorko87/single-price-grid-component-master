@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body class="font-karla px-8 py-20 bg-primary-lightGray lg:py-0">
+    <main class="lg:flex lg:items-center lg:justify-center lg:h-screen">
+      <!--grid container-->
+      <div
+        class="rounded-md overflow-hidden lg:grid lg:grid-cols-2 lg:max-w-[633px]"
+      >
+        <!--box one-->
+        <div
+          class="bg-white px-6 py-7 lg:col-span-2 lg:pt-10 lg:pb-[44px] lg:px-10"
+        >
+          <h1
+            class="text-xl text-primary-cyan font-medium mb-5 lg:text-[26px] -tracking-wide"
+          >
+            Join our community
+          </h1>
+          <span
+            class="text-base block text-primary-brightYellow font-medium leading-tighter mb-6 lg:text-lg lg:mb-2"
+            >30-day, hassle-free money back guarantee</span
+          >
+          <p
+            class="text-primary-garyishBlue text-sm leading-6 mb-2 lg:text-base lg:mb-0"
+          >
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
+        <!--box two-->
+        <div class="bg-primary-cyan px-6 py-6 lg:py-10 lg:px-10">
+          <h2 class="text-white text-[1.16rem] mb-3">Monthly Subscription</h2>
+          <!--price wrapper-->
+          <div class="flex items-center gap-3 mb-2">
+            <span class="block text-white text-3xl font-bold">&dollar;29</span>
+            <span
+              class="text-base font-thin text-primary-lightGray opacity-70 tracking-wide"
+              >per month
+            </span>
+          </div>
+          <p class="text-white text-base opacity-75 mb-6 lg:text-sm">
+            Full access for less than &dollar;1 a day
+          </p>
+          <button
+            class="block py-3 bg-primary-brightYellow w-full rounded-lg text-white cursor-pointer hover:opacity-90"
+          >
+            Sign Up
+          </button>
+        </div>
+        <!--box three-->
+        <div class="bg-primary-garyishBlueOp px-6 py-5 lg:py-10 lg:px-10">
+          <h3 class="text-white text-lg mb-3">Why Us</h3>
+          <ul class="list flex flex-col">
+            <li><a href="#">Tutorials by industry experts </a></li>
+            <li><a href="#">Peer &amp; expert code review</a></li>
+            <li><a href="#">Coding exercises</a></li>
+            <li><a href="#">Access to our GitHub repos</a></li>
+            <li><a href="#">Community forum</a></li>
+            <li><a href="#">Flashcard decks</a></li>
+            <li><a href="#"> New videos every week</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
